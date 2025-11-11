@@ -16,11 +16,12 @@
     display: flex;
     gap: 3rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 
 .policy-block .policy-block-img {
-    width: 500px;
+    width: 520px;
     height: 350px;
     object-fit: cover;
     border-radius: 1rem;

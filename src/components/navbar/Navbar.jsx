@@ -39,8 +39,7 @@ const Navbar = ({ scroll_behaviour = 0 }) => {
                 <img src={logo} alt="RAM logo" />
             </div>
             <ul className="nav-links">
-                <a href="/"><li className="nav-item">Home</li></a>
-                <li className="nav-item">About us</li>
+                <a href="/"><li className="nav-item">Inicio</li></a>
                 <a href="/quality"><li className="nav-item">Calidad</li></a>
                 <a href="/contact"><li className="nav-item">Contacto</li></a>
             </ul>

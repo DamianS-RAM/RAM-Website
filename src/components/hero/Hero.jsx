@@ -29,11 +29,16 @@ const Hero = () => {
                         <div className="hero-card">
                             <img src={services} alt="RAM" className='hero-card-img'/>
                             <div className="hero-card-content">
-                                <h2>Ramos Arizpe Manufacturing</h2>
-                                <div className='hero-card-text'>
-                                    Ramos Arizpe Manufacturing (RAM) es una de las plantas más grandes y con más experiencia de pre-maquinado y acabados de componentes para motores de combustión interna. Nosotros estamos dedicados al maquinado de precisión de piezas de fundición con aleaciones de aluminio y hierro fundido. Nuestra operación de clase mundial localizada en Saltillo, Coahuila México, trabaja para la industria terminal en América del Norte y del Sur, así como en Asia y Europa.
+                                <div className="section-pre-title">
+                                    RAMOS ARIZPE MANUFACTURING
                                 </div>
-                                <button type="button" className='hero-card-button'>Contáctanos</button>
+                                <div className="section-title">
+                                    NUESTRA HISTORIA
+                                </div>
+                                <div className='hero-card-text font-roboto'>
+                                    La empresa “RAM” es instituida legalmente a finales del segundo cuarto del 2009 como Powertrain Production Systems (“PPS”) a Royal Oak Industries. “PPS” ahora “RAM” fue establecida en el año 2005 quien abre operaciones con una Planta de 6700 metros cuadrados ubicada en Gorrión Lote 13 Manzana 3 Parque Industrial FINSA Ramos Arizpe, Coahuila C.P. 25904 México. <br /><br />
+                                    Ramos Arizpe Manufacturing es una de las plantas más grandes y con más experiencia de pre-maquinado y acabados de piezas para motores. 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -55,23 +60,6 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="card odd-card">
-                        <div className="hero-card">
-                            <img src={manufacture} alt="RAM" className='hero-card-img'/>
-                            <div className="hero-card-content">
-                                <h2>Calidad</h2>
-                                <div className='hero-card-text'>
-                                    <ul>
-                                        	<li>Laboratorio de medición CMM</li>
-                                            <li>Laboratorio interno de análisis para sistemas de refrigerante</li>
-                                            <li>Experiencia en sistemas de calidad GM, Chrysler y Ford</li>
-                                            <li>Certificación ISO/TS  16949</li>
-                                    </ul>
-                                </div>
-                                <button type="button" className='hero-card-button'>Nuestro Compromiso</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card">
                         <div className="clients-card">
                             <div className="client-title">
                                 <div className="section-pre-title">
