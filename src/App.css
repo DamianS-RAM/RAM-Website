@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, #root {
+    min-height: 100dvh;
+}
+
+div#root {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    background-color: var(--color-bg-secondary);
+    z-index: 0;
+}
+
+main.content {
+    padding: 5rem 0 0;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.section-cover-pre-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--color-text-contrast);
+    margin-left: .5rem;
+}
+
+.section-cover-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: var(--color-text-contrast);
+    line-height: 1.2;
+}
+
+.section-pre-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--color-primary);
+    margin-left: .3rem;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+input, textarea, button {
+    font-family: inherit;
+}
+
+.section-container {
+    max-width: 65rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.last-element {
+    margin-bottom: 5rem;
+}

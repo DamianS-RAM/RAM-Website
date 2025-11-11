@@ -1,0 +1,38 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-bg);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    padding: 2rem 5rem 1rem;
+    width: 100%;
+}
+
+.footer-logo,
+.footer-logo img {
+    height: 3.5rem;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.footer-line {
+    padding: .4rem 0;
+    background-color: var(--color-bg-contrast);
+    color: var(--color-text-contrast);
+    text-align: center;
+    font-size: .7rem;
+}

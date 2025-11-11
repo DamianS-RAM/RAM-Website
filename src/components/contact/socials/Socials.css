@@ -1,0 +1,32 @@
+.container {
+    background-color: var(--color-bg-secondary);
+}
+
+.facebook_logo_main {
+    fill:#0866ff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none;
+}
+
+.facebook_logo {
+    fill:#fff;
+    fill-opacity:1;
+    fill-rule:nonzero;
+    stroke:none  
+}
+
+.dark-fill {
+    fill: var(--color-bg-contrast);
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.social-media-icons svg {
+    width: 100px;
+    height: 100px;
+}

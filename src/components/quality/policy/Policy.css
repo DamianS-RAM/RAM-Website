@@ -1,0 +1,53 @@
+.policy-container {
+    width: 100%;
+}
+
+.odd-policy-container {
+    background-color: var(--color-bg);
+}
+
+.quality-policy {
+}
+
+.policy-block {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+
+.policy-block .policy-block-img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.policy-block-txt {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.policy-block-txt ul {
+    margin: 1rem 0;
+}
+
+.certificate-block {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.certificates-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.certificate-img img {
+    height: 45rem;
+    width: 100%;
+}
