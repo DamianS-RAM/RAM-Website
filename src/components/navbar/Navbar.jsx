@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './navbar.css'
+import './Navbar.css'
 import logo from '@assets/images/logo_ram.webp'
 
 const Navbar = ({ scroll_behaviour = 0 }) => {

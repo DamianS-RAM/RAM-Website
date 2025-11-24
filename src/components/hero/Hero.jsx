@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './hero.css'
-import building from '@assets/images/hero_cover.jpg'
+import './Hero.css'
+import building from '@assets/images/hero_cover.JPG'
 import ford_logo from '@assets/images/clients/ford_logo.webp'
 import brp_logo from '@assets/images/clients/brp_logo.svg'
 import nemak_logo from '@assets/images/clients/nemak_logo.webp'

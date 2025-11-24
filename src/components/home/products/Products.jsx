@@ -8,10 +8,10 @@ import maverick from '@assets/images/home/Maverick IEM Head.png'
 import nano from '@assets/images/home/Nano Head.png'
 import css from '@assets/images/home/CSS675 Block.png'
 import sge from '@assets/images/home/GM SGE Head.png'
-import product from '@assets/images/home/product_img.jpg'
-import t6_example from '@assets/images/home/T6 Example.jpg'
-import challenger from '@assets/images/home/Challenger.jpg'
-import ford from '@assets/images/home/Ford.jpg'
+import product from '@assets/images/home/car_example/penta_car.webp'
+import t6_example from '@assets/images/home/car_example/T6 Example.webp'
+import challenger from '@assets/images/home/car_example/Challenger.webp'
+import ford from '@assets/images/home/car_example/Ford.webp'
 
 const Products = () => {
   return (
