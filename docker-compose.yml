@@ -1,20 +1,9 @@
+version: '3.8'
+
 services:
   web:
-    # Nombre del contenedor
-    container_name: mi-react-app
-    
-    # Construye desde el Dockerfile local
-    build:
-      context: .
-      dockerfile: Dockerfile
-    
-    # Mapea el puerto 3000 de tu PC al puerto 80 del contenedor
+    build: .
     ports:
-      - "3000:80"
-    
-    # Reinicia automáticamente si falla
+      - "80:80"
     restart: unless-stopped
-    
-    # Variables de entorno (opcional)
-    environment:
-      - NODE_ENV=production
+    container_name: mi-react-app
