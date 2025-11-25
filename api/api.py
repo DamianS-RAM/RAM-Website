@@ -8,3 +8,5 @@ CORS(app, origins=["http://localhost:5173"]) # Allows requests only from your Re
 @app.route('/api/time')
 def get_current_time():
     return {"message": "Hello"}
+
+#Cambios para prueba de deploy
