@@ -1,32 +1,11 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate, useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './App.css'
+
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Quality from '@pages/Quality'
-
-function App() {
-
-    /* const [currentTime, setCurrentTime] = useState(0);
-  
-    useEffect(() => {
-        const fetchData = async () => {
-            fetch("http://localhost:5000/api/time")
-            .then(res => res.json())
-            .then(data => console.log(data.message));
-      };
-
-      fetchData();
-    }, []); */
-
-    return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/quality" element={<Quality />} />
-        </Routes>
-    )
-}
 
 
 function LanguageWrapper({ children }) {
@@ -53,6 +32,34 @@ function LanguageWrapper({ children }) {
 
   return children;
 }
+
+
+function App() {
+    const { i18n } = useTranslation();
+
+    return (
+        <Routes>
+            {/* Redirige la raíz al idioma detectado */}
+            <Route 
+                path="/" 
+                element={<Navigate to={`/${i18n.language.split('-')[0] || 'en'}/home`} replace />} 
+            />
+
+            {/* Rutas con prefijo de idioma */}
+            <Route path="/:lang/*" >
+                <Route index path="home" element={<Home />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="quality" element={<Quality />} />
+                <Route path="*" element={<LanguageWrapper><Navigate to={`/${i18n.language.split('-')[0] || 'en'}/home`} replace /></LanguageWrapper>} />
+            </Route>
+
+            {/* Ruta 404 */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+    )
+}
+
+
 
 
 export default App
