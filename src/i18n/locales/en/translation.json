@@ -24,7 +24,38 @@
     },
     "quality": {
         "title": "QUALITY",
-        "description": "OUR COMMITMENT"
+        "description": "OUR COMMITMENT",
+        "policy": {
+            "pretitle": "QUALITY IN EVERY OUTCOME",
+            "title": "QUALITY POLICY",
+            "content": "At Ramos Arizpe Manufacturing, we are committed to meeting and exceeding our customers’ expectations and satisfaction. Our focus is on achieving objectives and complying with applicable requirements, while driving continuous improvement throughout our manufacturing processes."
+        },
+        "process": {
+            "pretitle": "QUALITY IS BUILT STEP BY STEP",
+            "title": "PROCESS CONTROL",
+            "content": "Our quality process control:",
+            "steps": {
+                "step1": "Operational Checklist.",
+                "step2": "Tool Change Control.",
+                "step3": "Gage Part Inspection.",
+                "step4": "Machine Handover Procedure."
+            }
+        },
+        "ambiental": {
+            "pretitle": "BUILDING A SUSTAINABLE FUTURE",
+            "title": "ENVIRONMENTAL POLICY",
+            "content": "At RAM, we are committed to protecting the environment through:",
+            "content2": "Always focused on the continuous improvement of our Environmental Management System.",
+            "steps": {
+                "step1": "The prevention of pollution in our manufacturing processes;",
+                "step2": "Compliance with legal requirements and other obligations we subscribe to;",
+                "step3": "Achievement of our environmental objectives and indicators."
+            }
+        },
+        "certifications": {
+            "pretitle": "GUARANTEED QUALITY",
+            "title": "CERTIFICATIONS"
+        }
     },
     "contact": {
         "title": "Contact Us",
