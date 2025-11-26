@@ -48,8 +48,8 @@ function App() {
             {/* Rutas con prefijo de idioma */}
             <Route path="/:lang/*" >
                 <Route index path="home" element={<Home />} />
-                <Route path="contact" element={<Contact />} />
                 <Route path="quality" element={<Quality />} />
+                <Route path="contact" element={<Contact />} />
                 <Route path="*" element={<LanguageWrapper><Navigate to={`/${i18n.language.split('-')[0] || 'en'}/home`} replace /></LanguageWrapper>} />
             </Route>
 

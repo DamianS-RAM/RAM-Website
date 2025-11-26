@@ -2,17 +2,29 @@
     "nav": {
         "home": "Inicio",
         "about": "Nosotros",
-        "services": "Servicios",
+        "quality": "Calidad",
         "contact": "Contacto"
     },
     "home": {
-        "title": "Bienvenido a Nuestro Sitio",
-        "subtitle": "Construyendo experiencias digitales increíbles",
-        "cta": "Comenzar"
+        "banner": "20 años de experiencia en maquinado CNC para empresas.",
+        "history": {
+            "pretitle": "RAMOS ARIZPE MANUFACTURING",
+            "title": "NUESTRA HISTORIA",
+            "content1": "La empresa “RAM” es instituida legalmente a finales del segundo cuarto del 2009 como Powertrain Production Systems (“PPS”) a Royal Oak Industries. “PPS” ahora “RAM” fue establecida en el año 2005 quien abre operaciones con una Planta de 6700 metros cuadrados ubicada en Gorrión Lote 13 Manzana 3 Parque Industrial FINSA Ramos Arizpe, Coahuila C.P. 25904 México.",
+            "content2": "Ramos Arizpe Manufacturing es una de las plantas más grandes y con más experiencia de pre-maquinado y acabados de piezas para motores.Nosotros estamos dedicados al maquinado de precisión de piezas de fundición con aleaciones de aluminio y hierro. Nuestra operación de clase mundial trabaja para múltiples OEM en América del Norte y del Sur, así como en Asia y Europa."
+        },
+        "clients": {
+            "pretitle": "ALIADOS EN LA INDUSTRIA",
+            "title": "NUESTROS CLIENTES"
+        },
+        "products": {
+            "pretitle": "MAQUINADO PARA LA INDUSTRIA",
+            "title": "NUESTROS CLIENTES"
+        }
     },
-    "about": {
-        "title": "Nosotros",
-        "description": "Somos un equipo de desarrolladores apasionados"
+    "quality": {
+        "title": "CALIDAD",
+        "description": "NUESTRO COMPROMISO"
     },
     "contact": {
         "title": "Contáctanos",

@@ -4,9 +4,11 @@ import quality_1 from '@assets/images/quality/quality_1.webp'
 import quality_2 from '@assets/images/quality/quality_2.webp'
 import certificate_1 from '@assets/images/quality/Certificado IATF.jpg'
 import certificate_2 from '@assets/images/quality/41797.jpg'
+import { useTranslation } from 'react-i18next'
 
 const Policy = () => {
-  return (
+    const { t } = useTranslation()
+    return (
     <>
         <div className="policy-container odd-policy-container font-roboto">
             <div className="policy-block">

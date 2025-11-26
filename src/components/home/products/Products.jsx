@@ -12,18 +12,20 @@ import product from '@assets/images/home/car_example/penta_car.webp'
 import t6_example from '@assets/images/home/car_example/T6 Example.webp'
 import challenger from '@assets/images/home/car_example/Challenger.webp'
 import ford from '@assets/images/home/car_example/Ford.webp'
+import { useTranslation } from 'react-i18next';
 
 const Products = () => {
-  return (
+    const { t } = useTranslation();
+    return (
     <>
         <div className="card">
             <div className="products-card">
                 <div className="client-title">
                     <div className="section-pre-title">
-                        ALIADOS EN LA INDUSTRIA
+                        {t('home.products.pretitle')}
                     </div>
                     <div className="section-title">
-                        NUESTROS PRODUCTOS
+                        {t('home.products.title')}
                     </div>
                 </div>
                 <div className="products-container">

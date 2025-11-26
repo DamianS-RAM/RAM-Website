@@ -2,17 +2,29 @@
     "nav": {
         "home": "Home",
         "about": "About Us",
-        "services": "Services",
+        "quality": "Quality",
         "contact": "Contact"
     },
     "home": {
-        "title": "Welcome to Our Website",
-        "subtitle": "Building amazing digital experiences",
-        "cta": "Get Started"
+        "banner": "20 years of expertise in CNC machining for leading companies.",
+        "history": {
+            "pretitle": "RAMOS ARIZPE MANUFACTURING",
+            "title": "OUR HISTORY",
+            "content1": "The company “RAM” was legally established at the end of the second quarter of 2009 as Powertrain Production Systems (“PPS”) under Royal Oak Industries. “PPS,” now “RAM,” was originally founded in 2005 and began operations with a 6,700-square-meter plant located at Gorrión Lot 13, Block 3, FINSA Industrial Park, Ramos Arizpe, Coahuila, C.P. 25904, Mexico.",
+            "content2": "Ramos Arizpe Manufacturing is one of the largest and most experienced plants in pre-machining and finishing of engine components. We are dedicated to precision machining of cast parts made from aluminum and iron alloys. Our world-class operation serves multiple OEMs in North and South America, as well as in Asia and Europe."
+        },
+        "clients": {
+            "pretitle": "INDUSTRY PARTNERS",
+            "title": "OUR CLIENTS"
+        },
+        "products": {
+            "pretitle": "MACHINING SOLUTIONS",
+            "title": "OUR PRODUCTS"
+        }
     },
-    "about": {
-        "title": "About Us",
-        "description": "We are a team of passionate developers"
+    "quality": {
+        "title": "QUALITY",
+        "description": "OUR COMMITMENT"
     },
     "contact": {
         "title": "Contact Us",
