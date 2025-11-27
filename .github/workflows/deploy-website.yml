@@ -1,0 +1,44 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # Permite ejecutar manualmente
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_IP }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /var/www/ram-web/repo/RAM-Website
+            git pull origin main
+            cd /var/www/ram-web/current
+            docker compose down
+            docker compose build --no-cache --pull
+            docker compose up -d
+            echo "Deploy completado - $(date)"
+            
+      - name: Verify deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_IP }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker ps
+            docker compose logs --tail=20
+            
+      - name: Notify deployment
+        if: success()
+        run: echo "✅ Deployment successful!"
+        
+      - name: Notify failure
+        if: failure()
+        run: echo "❌ Deployment failed!"
