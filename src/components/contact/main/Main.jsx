@@ -92,7 +92,7 @@ const Main = () => {
                                 <textarea name="message" rows="3" placeholder={t('contact.form.message_input')} required></textarea>
                             </div>
                             <button type="submit" className="submit-button">
-                                {t('contact.form.send')}.form
+                                {t('contact.form.send')}
                                 <svg xmlns="http://www.w3.org/2000/svg" height="23px" viewBox="0 -960 960 960" width="23px"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
                             </button>
                         </div>
