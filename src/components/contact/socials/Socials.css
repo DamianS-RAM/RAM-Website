@@ -2,22 +2,25 @@
     background-color: var(--color-bg-secondary);
 }
 
-.facebook_logo_main {
-    fill:#0866ff;
-    fill-opacity:1;
-    fill-rule:nonzero;
-    stroke:none;
-}
-
-.facebook_logo {
-    fill:#fff;
-    fill-opacity:1;
-    fill-rule:nonzero;
-    stroke:none  
-}
-
 .dark-fill {
     fill: var(--color-bg-contrast);
+    transition: all .2s ease;
+}
+
+.facebook-icon:hover .dark-fill {
+    fill: #4267B2;
+}
+
+.whatsapp-icon:hover .dark-fill {
+    fill: #25D366;
+}
+
+.tiktok-icon:hover .dark-fill {
+    fill: #101010;
+}
+
+.linkedin-icon:hover .dark-fill {
+    fill: #0072B1;
 }
 
 .social-media-icons {
