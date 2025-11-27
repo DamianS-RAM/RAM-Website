@@ -1,16 +1,16 @@
-name: Deploy to VPS
+name: Deploy to Production (Simple)
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # Permite ejecutar manualmente
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Deploy to server
+      - name: Deploy to VPS
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_IP }}
@@ -18,29 +18,49 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
+            set -e  # Para si hay error
+            
+            echo "📥 Actualizando código..."
             cd /var/www/ram-web/repo/RAM-Website
+            sudo chown -R deploy:webdevs .
+            git fetch origin
+            git checkout main
             git pull origin main
-            cd /var/www/ram-web/current
-            docker compose down
+            
+            echo "🛑 Deteniendo contenedores..."
+            cd /var/www/ram-web/current 2>/dev/null || echo "No hay deploy previo"
+            docker compose down 2>/dev/null || true
+            
+            echo "📦 Creando nuevo release..."
+            TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+            mkdir -p /var/www/ram-web/releases/$TIMESTAMP
+            rsync -av --exclude='.git' --exclude='node_modules' \
+              /var/www/ram-web/repo/RAM-Website/ \
+              /var/www/ram-web/releases/$TIMESTAMP/
+            
+            echo "🐳 Construyendo con Docker..."
+            cd /var/www/ram-web/releases/$TIMESTAMP
             docker compose build --no-cache --pull
+            
+            echo "🔗 Actualizando symlink..."
+            rm -f /var/www/ram-web/current
+            ln -sf /var/www/ram-web/releases/$TIMESTAMP /var/www/ram-web/current
+            
+            echo "🚀 Levantando contenedores..."
+            cd /var/www/ram-web/current
             docker compose up -d
-            echo "Deploy completado - $(date)"
             
-      - name: Verify deployment
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.VPS_IP }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          script: |
-            docker ps
-            docker compose logs --tail=20
+            echo "🧹 Limpiando releases antiguos..."
+            cd /var/www/ram-web/releases
+            ls -t | tail -n +6 | xargs rm -rf 2>/dev/null || true
             
-      - name: Notify deployment
+            echo "✅ Deploy completado!"
+            docker compose ps
+            
+      - name: Notify success
         if: success()
-        run: echo "✅ Deployment successful!"
+        run: echo "✅ Deploy exitoso!"
         
       - name: Notify failure
         if: failure()
-        run: echo "❌ Deployment failed!"
+        run: echo "❌ Deploy falló!"
