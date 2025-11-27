@@ -16,6 +16,7 @@ jobs:
           host: ${{ secrets.VPS_IP }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
           script: |
             cd /var/www/ram-web/repo/RAM-Website
             git pull origin main
