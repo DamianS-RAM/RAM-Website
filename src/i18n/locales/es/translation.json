@@ -58,11 +58,27 @@
         }
     },
     "contact": {
-        "title": "Contáctanos",
-        "name": "Nombre",
-        "email": "Correo electrónico",
-        "message": "Mensaje",
-        "send": "Enviar Mensaje"
+        "pretitle": "INFORMACION ADICIONAL",
+        "title": "CONTACTO",
+        "form": {
+            "pretitle": "Envía tus dudas",
+            "title": "Contactanos",
+            "name": "Nombre:",
+            "name_input": "Ingresa tu nombre completo",
+            "email": "Correo electrónico:",
+            "email_input": "Correo electrónico de contacto",
+            "phone": "Teléfono:",
+            "phone_input": "Teléfono de contacto",
+            "company": "Empresa:",
+            "company_input": "Nombre de la empresa",
+            "message": "Mensaje:",
+            "message_input": "Escribe tu mensaje aquí",
+            "send": "Enviar"
+        },
+        "socials": {
+            "pretitle": "NOTICIAS Y OFERTAS DE TRABAJO",
+            "title": "REDES SOCIALES"
+        }
     },
     "common": {
         "loading": "Cargando...",

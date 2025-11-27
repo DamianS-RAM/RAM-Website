@@ -58,11 +58,27 @@
         }
     },
     "contact": {
-        "title": "Contact Us",
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "send": "Send Message"
+        "pretitle": "ADDITIONAL INFORMATION",
+        "title": "CONTACT",
+        "form": {
+            "pretitle": "Send us your inquiries",
+            "title": "Contact Us",
+            "name": "Name:",
+            "name_input": "Enter your full name",
+            "email": "Email:",
+            "email_input": "Contact email",
+            "phone": "Phone number:",
+            "phone_input": "Contact phone number",
+            "company": "Company:",
+            "company_input": "Company name",
+            "message": "Message:",
+            "message_input": "Write your message here",
+            "send": "Send"
+        },
+        "socials": {
+            "pretitle": "NEWS AND JOB OFFERS",
+            "title": "SOCIAL MEDIA"
+        }
     },
     "common": {
         "loading": "Loading...",
