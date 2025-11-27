@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "quality": "Quality",
+        "contact": "Contact"
+    },
+    "home": {
+        "banner": "20 years of expertise in CNC machining for leading companies.",
+        "history": {
+            "pretitle": "RAMOS ARIZPE MANUFACTURING",
+            "title": "OUR HISTORY",
+            "content1": "The company “RAM” was legally established at the end of the second quarter of 2009 as Powertrain Production Systems (“PPS”) under Royal Oak Industries. “PPS,” now “RAM,” was originally founded in 2005 and began operations with a 6,700-square-meter plant located at Gorrión Lot 13, Block 3, FINSA Industrial Park, Ramos Arizpe, Coahuila, C.P. 25904, Mexico.",
+            "content2": "Ramos Arizpe Manufacturing is one of the largest and most experienced plants in pre-machining and finishing of engine components. We are dedicated to precision machining of cast parts made from aluminum and iron alloys. Our world-class operation serves multiple OEMs in North and South America, as well as in Asia and Europe."
+        },
+        "clients": {
+            "pretitle": "INDUSTRY PARTNERS",
+            "title": "OUR CLIENTS"
+        },
+        "products": {
+            "pretitle": "MACHINING SOLUTIONS",
+            "title": "OUR PRODUCTS"
+        }
+    },
+    "quality": {
+        "title": "QUALITY",
+        "description": "OUR COMMITMENT",
+        "policy": {
+            "pretitle": "QUALITY IN EVERY OUTCOME",
+            "title": "QUALITY POLICY",
+            "content": "At Ramos Arizpe Manufacturing, we are committed to meeting and exceeding our customers’ expectations and satisfaction. Our focus is on achieving objectives and complying with applicable requirements, while driving continuous improvement throughout our manufacturing processes."
+        },
+        "process": {
+            "pretitle": "QUALITY IS BUILT STEP BY STEP",
+            "title": "PROCESS CONTROL",
+            "content": "Our quality process control:",
+            "steps": {
+                "step1": "Operational Checklist.",
+                "step2": "Tool Change Control.",
+                "step3": "Gage Part Inspection.",
+                "step4": "Machine Handover Procedure."
+            }
+        },
+        "ambiental": {
+            "pretitle": "BUILDING A SUSTAINABLE FUTURE",
+            "title": "ENVIRONMENTAL POLICY",
+            "content": "At RAM, we are committed to protecting the environment through:",
+            "content2": "Always focused on the continuous improvement of our Environmental Management System.",
+            "steps": {
+                "step1": "The prevention of pollution in our manufacturing processes;",
+                "step2": "Compliance with legal requirements and other obligations we subscribe to;",
+                "step3": "Achievement of our environmental objectives and indicators."
+            }
+        },
+        "certifications": {
+            "pretitle": "GUARANTEED QUALITY",
+            "title": "CERTIFICATIONS"
+        }
+    },
+    "contact": {
+        "pretitle": "ADDITIONAL INFORMATION",
+        "title": "CONTACT",
+        "form": {
+            "pretitle": "Send us your inquiries",
+            "title": "Contact Us",
+            "name": "Name:",
+            "name_input": "Enter your full name",
+            "email": "Email:",
+            "email_input": "Contact email",
+            "phone": "Phone number:",
+            "phone_input": "Contact phone number",
+            "company": "Company:",
+            "company_input": "Company name",
+            "message": "Message:",
+            "message_input": "Write your message here",
+            "send": "Send"
+        },
+        "socials": {
+            "pretitle": "NEWS AND JOB OFFERS",
+            "title": "SOCIAL MEDIA"
+        }
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "save": "Save",
+        "cancel": "Cancel"
+    }
+}

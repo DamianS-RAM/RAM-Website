@@ -22,7 +22,7 @@
 
 .footer-list {
     display: flex;
-    gap: 1.5rem;
+    gap: .5rem;
     list-style: none;
     justify-content: center;
     font-weight: 600;
@@ -35,4 +35,13 @@
     color: var(--color-text-contrast);
     text-align: center;
     font-size: .7rem;
+}
+
+.footer-item {
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+}
+
+.footer-item:hover {
+    color: var(--color-primary);
 }

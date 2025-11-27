@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "quality": "Calidad",
+        "contact": "Contacto"
+    },
+    "home": {
+        "banner": "20 años de experiencia en maquinado CNC para empresas.",
+        "history": {
+            "pretitle": "RAMOS ARIZPE MANUFACTURING",
+            "title": "NUESTRA HISTORIA",
+            "content1": "La empresa “RAM” es instituida legalmente a finales del segundo cuarto del 2009 como Powertrain Production Systems (“PPS”) a Royal Oak Industries. “PPS” ahora “RAM” fue establecida en el año 2005 quien abre operaciones con una Planta de 6700 metros cuadrados ubicada en Gorrión Lote 13 Manzana 3 Parque Industrial FINSA Ramos Arizpe, Coahuila C.P. 25904 México.",
+            "content2": "Ramos Arizpe Manufacturing es una de las plantas más grandes y con más experiencia de pre-maquinado y acabados de piezas para motores.Nosotros estamos dedicados al maquinado de precisión de piezas de fundición con aleaciones de aluminio y hierro. Nuestra operación de clase mundial trabaja para múltiples OEM en América del Norte y del Sur, así como en Asia y Europa."
+        },
+        "clients": {
+            "pretitle": "ALIADOS EN LA INDUSTRIA",
+            "title": "NUESTROS CLIENTES"
+        },
+        "products": {
+            "pretitle": "MAQUINADO PARA LA INDUSTRIA",
+            "title": "NUESTROS CLIENTES"
+        }
+    },
+    "quality": {
+        "title": "CALIDAD",
+        "description": "NUESTRO COMPROMISO",
+        "policy": {
+            "pretitle": "CALIDAD EN CADA RESULTADO",
+            "title": "POLITICA DE CALIDAD",
+            "content": "En Ramos Arizpe Manufacturing estamos comprometidos en cumplir y exceder las expectativas y satisfacción de nuestros clientes, enfocados en el cumplimiento de nuestros objetivos y requerimientos aplicables dirigido a la mejora continua de nuestro proceso de manufactura."
+        },
+        "process": {
+            "pretitle": "LA CALIDAD SE PRODUCE PASO A PASO",
+            "title": "CONTROL DE PROCESO",
+            "content": "Nuestro proceso de calidad:",
+            "steps": {
+                "step1": "Lista de verificación de operaciones.",
+                "step2": "Control de cambio de herramienta.",
+                "step3": "Inspección de piezas de Gages.",
+                "step4": "Procedimiento de entrega de máquinas."
+            }
+        },
+        "ambiental": {
+            "pretitle": "POR UN FUTURO SOSTENIBLE",
+            "title": "POLITICA AMBIENTAL",
+            "content": "En RAM estamos comprometidos en proteger al medio ambiente a través de:",
+            "content2": "Todo ello enfocado siempre a la mejora continua de nuestro sistema de gestión ambiental.",
+            "steps": {
+                "step1": "La prevención de la contaminación de nuestros procesos de manufactura;",
+                "step2": "El cumplimiento de los requisitos legales y otros requisitos que nos suscribamos;",
+                "step3": "El cumplimiento de nuestros objetivos e indicadores ambientales"
+            }
+        },
+        "certifications": {
+            "pretitle": "CALIDAD GARANTIZADA",
+            "title": "CERTIFICACIONES"
+        }
+    },
+    "contact": {
+        "pretitle": "INFORMACION ADICIONAL",
+        "title": "CONTACTO",
+        "form": {
+            "pretitle": "Envía tus dudas",
+            "title": "Contactanos",
+            "name": "Nombre:",
+            "name_input": "Ingresa tu nombre completo",
+            "email": "Correo electrónico:",
+            "email_input": "Correo electrónico de contacto",
+            "phone": "Teléfono:",
+            "phone_input": "Teléfono de contacto",
+            "company": "Empresa:",
+            "company_input": "Nombre de la empresa",
+            "message": "Mensaje:",
+            "message_input": "Escribe tu mensaje aquí",
+            "send": "Enviar"
+        },
+        "socials": {
+            "pretitle": "NOTICIAS Y OFERTAS DE TRABAJO",
+            "title": "REDES SOCIALES"
+        }
+    },
+    "common": {
+        "loading": "Cargando...",
+        "error": "Algo salió mal",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+    }
+}
