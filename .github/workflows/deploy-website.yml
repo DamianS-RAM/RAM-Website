@@ -27,10 +27,8 @@ jobs:
             git pull origin main
             
             echo "🛑 Deteniendo contenedores..."
-            if [ -d "/var/www/ram-web/current" ]; then
-              cd /var/www/ram-web/current
-              docker compose down 2>/dev/null || true
-            fi
+            cd /var/www/ram-web/current
+            docker compose down
             
             echo "📦 Creando nuevo release..."
             TIMESTAMP=$(date +%Y%m%d_%H%M%S)
@@ -40,12 +38,8 @@ jobs:
               /var/www/ram-web/releases/$TIMESTAMP/
             
             echo "🐳 Construyendo con Docker..."
-            cd /var/www/ram-web/releases/$TIMESTAMP
-            docker compose build --no-cache --pull
-            
-            echo "🔗 Actualizando symlink..."
-            rm -f /var/www/ram-web/current
-            ln -sf /var/www/ram-web/releases/$TIMESTAMP /var/www/ram-web/current
+            cd /var/www/ram-web/current
+            docker compose build --no-cache
             
             echo "🚀 Levantando contenedores..."
             cd /var/www/ram-web/current

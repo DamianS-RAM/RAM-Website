@@ -24,8 +24,7 @@ const Main = () => {
                                     </svg>
                                 </div>
                                 <div className="contact-info">
-                                    Mx: (844) 134 29 81 <br />
-                                    US: +1 248 961 39 55
+                                    +52 (844) 134 2950 <br />
                                 </div>
                             </div>
                             <div className="contact-method">
