@@ -27,8 +27,10 @@ jobs:
             git pull origin main
             
             echo "🛑 Deteniendo contenedores..."
-            cd /var/www/ram-web/current 2>/dev/null || echo "No hay deploy previo"
-            docker compose down 2>/dev/null || true
+            if [ -d "/var/www/ram-web/current" ]; then
+              cd /var/www/ram-web/current
+              docker compose down 2>/dev/null || true
+            fi
             
             echo "📦 Creando nuevo release..."
             TIMESTAMP=$(date +%Y%m%d_%H%M%S)
@@ -48,13 +50,19 @@ jobs:
             echo "🚀 Levantando contenedores..."
             cd /var/www/ram-web/current
             docker compose up -d
+
+            echo "⏳ Esperando a que los contenedores inicien..."
+            sleep 5
             
             echo "🧹 Limpiando releases antiguos..."
             cd /var/www/ram-web/releases
             ls -t | tail -n +6 | xargs rm -rf 2>/dev/null || true
             
             echo "✅ Deploy completado!"
-            docker compose ps
+            echo ""
+            echo "📊 Estado de contenedores:"
+            cd /var/www/ram-web/current || exit 1
+            docker compose ps || echo "No se pudo verificar el estado de contenedores"
             
       - name: Notify success
         if: success()
