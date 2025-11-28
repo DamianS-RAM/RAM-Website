@@ -4,6 +4,7 @@ import quality_1 from '@assets/images/quality/quality_1.webp'
 import quality_2 from '@assets/images/quality/quality_2.webp'
 import certificate_1 from '@assets/images/quality/Certificado IATF.jpg'
 import certificate_2 from '@assets/images/quality/41797.jpg'
+import ctpat from '@assets/images/quality/ctpat_logo.webp'
 import { useTranslation } from 'react-i18next'
 
 const Policy = () => {
@@ -85,13 +86,16 @@ const Policy = () => {
                 <div className="section-title">
                     {t('quality.certifications.title')}
                 </div>
-                <div className="certificates-container">
-                    <div className="certificate-img">
-                        <img src={certificate_2} alt="" />
+                <div className='certificates'>
+                    <div className="certificates-container">
+                        <div className="certificate-img">
+                            <img src={certificate_2} alt="" />
+                        </div>
+                        <div className="certificate-img">
+                            <img src={certificate_1} alt="" />
+                        </div>
                     </div>
-                    <div className="certificate-img">
-                        <img src={certificate_1} alt="" />
-                    </div>
+                    <img src={ctpat} className='ctpat' alt="" />
                 </div>
             </div>
         </div>

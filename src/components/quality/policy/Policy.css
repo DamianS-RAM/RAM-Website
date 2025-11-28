@@ -6,9 +6,6 @@
     background-color: var(--color-bg);
 }
 
-.quality-policy {
-}
-
 .policy-block {
     max-width: 75rem;
     margin: 0 auto;
@@ -42,7 +39,15 @@
     padding: 5rem 0;
 }
 
+.certificates {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+}
+
 .certificates-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,4 +56,8 @@
 .certificate-img img {
     height: 45rem;
     width: 100%;
+}
+
+.ctpat {
+    width: 30rem;
 }
