@@ -18,45 +18,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            set -e  # Para si hay error
-            
-            echo "📥 Actualizando código..."
-            cd /var/www/ram-web/repo/RAM-Website
-            git fetch origin
-            git checkout main
-            git pull origin main
-            
-            echo "🛑 Deteniendo contenedores..."
-            cd /var/www/ram-web/current
-            docker compose down
-            
-            echo "📦 Creando nuevo release..."
-            TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-            mkdir -p /var/www/ram-web/releases/$TIMESTAMP
-            rsync -av --exclude='.git' --exclude='node_modules' \
-              /var/www/ram-web/repo/RAM-Website/ \
-              /var/www/ram-web/releases/$TIMESTAMP/
-            
-            echo "🐳 Construyendo con Docker..."
-            cd /var/www/ram-web/current
-            docker compose build --no-cache
-            
-            echo "🚀 Levantando contenedores..."
-            cd /var/www/ram-web/current
-            docker compose up -d
-
-            echo "⏳ Esperando a que los contenedores inicien..."
-            sleep 5
-            
-            echo "🧹 Limpiando releases antiguos..."
-            cd /var/www/ram-web/releases
-            ls -t | tail -n +6 | xargs rm -rf 2>/dev/null || true
-            
-            echo "✅ Deploy completado!"
-            echo ""
-            echo "📊 Estado de contenedores:"
-            cd /var/www/ram-web/current || exit 1
-            docker compose ps || echo "No se pudo verificar el estado de contenedores"
+            clean-deploy
             
       - name: Notify success
         if: success()
