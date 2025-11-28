@@ -22,7 +22,6 @@ jobs:
             
             echo "📥 Actualizando código..."
             cd /var/www/ram-web/repo/RAM-Website
-            sudo chown -R deploy:webdevs .
             git fetch origin
             git checkout main
             git pull origin main
